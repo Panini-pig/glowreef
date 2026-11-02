@@ -1,0 +1,13 @@
+node_modules/
+dist/
+shots/
+research/
+*.log
+dev.err
+dev*.log
+dev*.err
+selfplay*.log
+.acl-recovery/
+.vite/
+*.tsbuildinfo
+.DS_Store

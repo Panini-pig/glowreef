@@ -1,0 +1,22 @@
+{
+  "name": "glowreef",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Glowreef（深渊殖民地）— 一款深海发光生物题材的实时领地争夺小游戏",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173",
+    "test:sim": "node --experimental-strip-types scripts/sim-test.ts",
+    "test:ui": "node scripts/accept-marquee.cjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.55.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
