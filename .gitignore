@@ -9,5 +9,6 @@ dev*.err
 selfplay*.log
 .acl-recovery/
 .vite/
+.wrangler/
 *.tsbuildinfo
 .DS_Store

@@ -88,6 +88,19 @@ npm run preview    # http://127.0.0.1:4173
 
 `vite.config.ts` 的 `base: './'` 已经保证静态资源用相对路径，部署到 Pages 根路径或子路径都可。
 
+### Cloudflare Workers（可选）
+
+如果控制台建的是 **Worker** 而不是 Pages，仓库已带 `wrangler.jsonc`：
+
+| 设置 | 值 |
+|---|---|
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy` |
+| 静态资源目录 | `./dist`（由 `wrangler.jsonc` 指定） |
+| 预览构建 | 先关掉 |
+
+显式 `wrangler.jsonc` 会跳过 Wrangler 的“自动 Vite 配置”，因此不需要把 Vite 升到 6。纯静态项目仍推荐 Pages；Workers 适合以后要加 API/房间服务时再切。
+
 ## 3. 操作
 
 | 输入 | 行为 |
